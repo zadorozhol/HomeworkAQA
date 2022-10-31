@@ -20,7 +20,7 @@ public abstract class BaseTest {
         driver.quit();
     }
 
-    private static void initDriver() {
+    static void initDriver() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();

@@ -58,32 +58,30 @@ public class GoogleTests extends BaseTest {
 //        googlePage.performSearch(false);
 //        Assertions.assertTrue(googlePage.getSearchResults().contains(EXPECTED_MUSK_TEXT),
 //                "search results did not contain expected text");
-//
-//    }
 
-    // null user name && null pwd
-    // null pwd
-    // null user name
-    // not null name && pwd
+//     null user name && null pwd
+//     null pwd
+//     null user name
+//     not null name && pwd
 
 //    @Test
-    public void mailTest(String userName, String userPassword) {
-        UkrNetPage ukrNetPage = new UkrNetPage();
-        ukrNetPage.setUserName(userName);
-        ukrNetPage.setPwd(userPassword);
-
-        if (userName == null) {
-            Assertions.assertTrue(ukrNetPage.getUserNameFieldError());
-        } else {
-            Assertions.assertFalse(ukrNetPage.getUserNameFieldError());
-        }
-
-        if (userPassword == null) {
-            Assertions.assertTrue(ukrNetPage.getPwdFieldError());
-        } else {
-            Assertions.assertFalse(ukrNetPage.getPwdFieldError());
-        }
-    }
+//    public void mailTest(String userName, String userPassword) {
+//        UkrNetPage ukrNetPage = new UkrNetPage();
+//        ukrNetPage.setUserName(userName);
+//        ukrNetPage.setPwd(userPassword);
+//
+//        if (userName == null) {
+//            Assertions.assertTrue(ukrNetPage.getUserNameFieldError());
+//        } else {
+//            Assertions.assertFalse(ukrNetPage.getUserNameFieldError());
+//        }
+//
+//        if (userPassword == null) {
+//            Assertions.assertTrue(ukrNetPage.getPwdFieldError());
+//        } else {
+//            Assertions.assertFalse(ukrNetPage.getPwdFieldError());
+//        }
+//    }
 
     private void loadGooglePage() {
         driver.get("about::blank");

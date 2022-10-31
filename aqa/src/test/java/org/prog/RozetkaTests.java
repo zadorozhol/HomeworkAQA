@@ -23,6 +23,11 @@ public class RozetkaTests extends BaseTest {
         System.out.println("i am another test!");
     }
 
+    private void loadGooglePage() {
+        driver.get("about::blank");
+        driver.get("https://google.com/");
+        driver.manage().window().maximize();
+    }
 
     private void loadRozetkaPage() {
         driver.get("about::blank");
